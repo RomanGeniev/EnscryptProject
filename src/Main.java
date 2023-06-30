@@ -34,12 +34,9 @@ public class Main {
                     Files.writeString(Input, EncryptionString);
                     break;
 
-//                case 3:
-//                    for (int i = 0; i < 42; i++) {
-//                        String BruteForceString = BruteForce.BruteForce(Files.readString(Output), i);
-//                        Files.writeString(Input,BruteForceString);
-//                    }
-
+                case 3:
+                        String BruteForceString = BruteForce.BruteForce(Files.readString(Output),Input);
+                        Files.writeString(Input,BruteForceString);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

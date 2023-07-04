@@ -10,9 +10,9 @@ public class BruteForce {
 
 
     public static String BruteForce(String offer, Path path) throws IOException {
-        String allVariants = null;
+        String allVariants = "";
         char[] encryptedArrayChar = offer.toCharArray();
-        for (int k = 1; k < 41; k++) {
+        for (int k = 0; k < 40; k++) {
             for (int i = 0; i < encryptedArrayChar.length; i++) {
                 for (int j = 0; j < Alphabet.length; j++) {
                     if (encryptedArrayChar[i] == Alphabet[j]) {
@@ -25,7 +25,7 @@ public class BruteForce {
                     }
                 }
             }
-            allVariants +=" ";
+            allVariants +=" " + k+1 + ": ";
         }
         return allVariants;
     }

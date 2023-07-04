@@ -1,17 +1,13 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
-import java.io.OutputStream;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int choiceOfOption = -1;
         Scanner scanner = new Scanner(System.in);
-        //System.out.println(Encryption.DecryptionOffer("привет",9));
         System.out.println("Введите сылку на файл который нужно зашифровать или расшифровать: ");
 
         Path Output = Path.of(String.valueOf(scanner.nextLine()));
